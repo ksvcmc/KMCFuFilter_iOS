@@ -1,0 +1,16 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+#use_frameworks!
+
+target 'KMCFuFilterDemo' do
+  pod 'libksygpulive/libksygpulive'
+  pod 'GPUImage',  '0.1.7'
+  pod 'libksygpulive/KSYGPUResource'
+  pod 'MJExtension'
+  pod 'Masonry'
+  pod 'SDWebImage'
+  pod 'MBProgressHUD'
+  pod 'UICKeyChainStore', '~> 2.1.1'
+end
+
+

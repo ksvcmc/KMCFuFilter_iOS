@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2128EF21ED56FE500A6162F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EF01ED56FE500A6162F /* AppDelegate.m */; };
+		F2128EF31ED56FE500A6162F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2128EF11ED56FE500A6162F /* Assets.xcassets */; };
+		F2128EF81ED56FF900A6162F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2128EF41ED56FF900A6162F /* LaunchScreen.storyboard */; };
+		F2128EF91ED56FF900A6162F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2128EF61ED56FF900A6162F /* Main.storyboard */; };
+		F2128F081ED5700F00A6162F /* FilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EFB1ED5700F00A6162F /* FilterManager.m */; };
+		F2128F091ED5700F00A6162F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2128EFC1ED5700F00A6162F /* Info.plist */; };
+		F2128F0A1ED5700F00A6162F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EFD1ED5700F00A6162F /* main.m */; };
+		F2128F0B1ED5700F00A6162F /* StickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EFF1ED5700F00A6162F /* StickerCell.m */; };
+		F2128F0C1ED5700F00A6162F /* StickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F011ED5700F00A6162F /* StickerView.m */; };
+		F2128F0D1ED5700F00A6162F /* UIButton+init.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F031ED5700F00A6162F /* UIButton+init.m */; };
+		F2128F0E1ED5700F00A6162F /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F051ED5700F00A6162F /* UIColor+Expanded.m */; };
+		F2128F0F1ED5700F00A6162F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F071ED5700F00A6162F /* ViewController.m */; };
+		F2128F121ED5703000A6162F /* KMCFuFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2128F111ED5703000A6162F /* KMCFuFilter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCFuFilterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2128EEF1ED56FE500A6162F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KMCFilterDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		F2128EF01ED56FE500A6162F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KMCFilterDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		F2128EF11ED56FE500A6162F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = KMCFilterDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		F2128EF51ED56FF900A6162F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KMCFilterDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		F2128EF71ED56FF900A6162F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KMCFilterDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		F2128EFA1ED5700F00A6162F /* FilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterManager.h; path = KMCFilterDemo/FilterManager.h; sourceTree = SOURCE_ROOT; };
+		F2128EFB1ED5700F00A6162F /* FilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterManager.m; path = KMCFilterDemo/FilterManager.m; sourceTree = SOURCE_ROOT; };
+		F2128EFC1ED5700F00A6162F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KMCFilterDemo/Info.plist; sourceTree = SOURCE_ROOT; };
+		F2128EFD1ED5700F00A6162F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KMCFilterDemo/main.m; sourceTree = SOURCE_ROOT; };
+		F2128EFE1ED5700F00A6162F /* StickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickerCell.h; path = KMCFilterDemo/StickerCell.h; sourceTree = SOURCE_ROOT; };
+		F2128EFF1ED5700F00A6162F /* StickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StickerCell.m; path = KMCFilterDemo/StickerCell.m; sourceTree = SOURCE_ROOT; };
+		F2128F001ED5700F00A6162F /* StickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickerView.h; path = KMCFilterDemo/StickerView.h; sourceTree = SOURCE_ROOT; };
+		F2128F011ED5700F00A6162F /* StickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StickerView.m; path = KMCFilterDemo/StickerView.m; sourceTree = SOURCE_ROOT; };
+		F2128F021ED5700F00A6162F /* UIButton+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+init.h"; path = "KMCFilterDemo/UIButton+init.h"; sourceTree = SOURCE_ROOT; };
+		F2128F031ED5700F00A6162F /* UIButton+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+init.m"; path = "KMCFilterDemo/UIButton+init.m"; sourceTree = SOURCE_ROOT; };
+		F2128F041ED5700F00A6162F /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "KMCFilterDemo/UIColor+Expanded.h"; sourceTree = SOURCE_ROOT; };
+		F2128F051ED5700F00A6162F /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Expanded.m"; path = "KMCFilterDemo/UIColor+Expanded.m"; sourceTree = SOURCE_ROOT; };
+		F2128F061ED5700F00A6162F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = KMCFilterDemo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		F2128F071ED5700F00A6162F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = KMCFilterDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
+		F2128F111ED5703000A6162F /* KMCFuFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCFuFilter.framework; path = ../framework/KMCFuFilter.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2128ED21ED56FB300A6162F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2128F121ED5703000A6162F /* KMCFuFilter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2128ECC1ED56FB300A6162F = {
+			isa = PBXGroup;
+			children = (
+				F2128ED71ED56FB300A6162F /* KMCFuFilterDemo */,
+				F2128ED61ED56FB300A6162F /* Products */,
+				F2128F101ED5703000A6162F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2128ED61ED56FB300A6162F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2128ED71ED56FB300A6162F /* KMCFuFilterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F2128EEF1ED56FE500A6162F /* AppDelegate.h */,
+				F2128EFA1ED5700F00A6162F /* FilterManager.h */,
+				F2128EFB1ED5700F00A6162F /* FilterManager.m */,
+				F2128EFC1ED5700F00A6162F /* Info.plist */,
+				F2128EFD1ED5700F00A6162F /* main.m */,
+				F2128EFE1ED5700F00A6162F /* StickerCell.h */,
+				F2128EFF1ED5700F00A6162F /* StickerCell.m */,
+				F2128F001ED5700F00A6162F /* StickerView.h */,
+				F2128F011ED5700F00A6162F /* StickerView.m */,
+				F2128F021ED5700F00A6162F /* UIButton+init.h */,
+				F2128F031ED5700F00A6162F /* UIButton+init.m */,
+				F2128F041ED5700F00A6162F /* UIColor+Expanded.h */,
+				F2128F051ED5700F00A6162F /* UIColor+Expanded.m */,
+				F2128F061ED5700F00A6162F /* ViewController.h */,
+				F2128F071ED5700F00A6162F /* ViewController.m */,
+				F2128EF41ED56FF900A6162F /* LaunchScreen.storyboard */,
+				F2128EF61ED56FF900A6162F /* Main.storyboard */,
+				F2128EF01ED56FE500A6162F /* AppDelegate.m */,
+				F2128ED81ED56FB300A6162F /* Supporting Files */,
+			);
+			path = KMCFuFilterDemo;
+			sourceTree = "<group>";
+		};
+		F2128ED81ED56FB300A6162F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2128EF11ED56FE500A6162F /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2128F101ED5703000A6162F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2128F111ED5703000A6162F /* KMCFuFilter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2128ED41ED56FB300A6162F /* KMCFuFilterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2128EEC1ED56FB300A6162F /* Build configuration list for PBXNativeTarget "KMCFuFilterDemo" */;
+			buildPhases = (
+				F2128ED11ED56FB300A6162F /* Sources */,
+				F2128ED21ED56FB300A6162F /* Frameworks */,
+				F2128ED31ED56FB300A6162F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMCFuFilterDemo;
+			productName = KMCFuFilterDemo;
+			productReference = F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2128ECD1ED56FB300A6162F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ksyun;
+				TargetAttributes = {
+					F2128ED41ED56FB300A6162F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZGJ54Q7R45;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2128ED01ED56FB300A6162F /* Build configuration list for PBXProject "KMCFuFilterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2128ECC1ED56FB300A6162F;
+			productRefGroup = F2128ED61ED56FB300A6162F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2128ED41ED56FB300A6162F /* KMCFuFilterDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2128ED31ED56FB300A6162F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2128F091ED5700F00A6162F /* Info.plist in Resources */,
+				F2128EF91ED56FF900A6162F /* Main.storyboard in Resources */,
+				F2128EF31ED56FE500A6162F /* Assets.xcassets in Resources */,
+				F2128EF81ED56FF900A6162F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2128ED11ED56FB300A6162F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2128EF21ED56FE500A6162F /* AppDelegate.m in Sources */,
+				F2128F0D1ED5700F00A6162F /* UIButton+init.m in Sources */,
+				F2128F0F1ED5700F00A6162F /* ViewController.m in Sources */,
+				F2128F0B1ED5700F00A6162F /* StickerCell.m in Sources */,
+				F2128F0E1ED5700F00A6162F /* UIColor+Expanded.m in Sources */,
+				F2128F0A1ED5700F00A6162F /* main.m in Sources */,
+				F2128F0C1ED5700F00A6162F /* StickerView.m in Sources */,
+				F2128F081ED5700F00A6162F /* FilterManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2128EF41ED56FF900A6162F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2128EF51ED56FF900A6162F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F2128EF61ED56FF900A6162F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2128EF71ED56FF900A6162F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2128EEA1ED56FB300A6162F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2128EEB1ED56FB300A6162F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2128EED1ED56FB300A6162F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
+				FRAMEWORK_SEARCH_PATHS = ../framework;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FUFILTER=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/UICKeyChainStore\"",
+					"\"${PODS_ROOT}/Headers/Public/libksygpulive\"",
+					../framework/KMCFuFilter.framework/Headers,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2128EEE1ED56FB300A6162F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
+				FRAMEWORK_SEARCH_PATHS = ../framework;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FUFILTER=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/UICKeyChainStore\"",
+					"\"${PODS_ROOT}/Headers/Public/libksygpulive\"",
+					../framework/KMCFuFilter.framework/Headers,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2128ED01ED56FB300A6162F /* Build configuration list for PBXProject "KMCFuFilterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2128EEA1ED56FB300A6162F /* Debug */,
+				F2128EEB1ED56FB300A6162F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2128EEC1ED56FB300A6162F /* Build configuration list for PBXNativeTarget "KMCFuFilterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2128EED1ED56FB300A6162F /* Debug */,
+				F2128EEE1ED56FB300A6162F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2128ECD1ED56FB300A6162F /* Project object */;
+}
