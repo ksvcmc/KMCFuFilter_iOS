@@ -9,7 +9,7 @@ target 'KMCFuFilterDemo' do
   pod 'Masonry'
   pod 'SDWebImage'
   pod 'MBProgressHUD'
-  pod 'KMCFuFilter’,:path=>"../"
+  pod 'KMCFuFilter’
 end
 
 
