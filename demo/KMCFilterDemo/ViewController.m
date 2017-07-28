@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "KMCFilter.h"
+#import <KMCFuFilter/KMCFilter.h>
 #import "KSYGPUStreamerKit.h"
 #import "FilterManager.h"
 #import "StickerView.h"

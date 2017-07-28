@@ -8,7 +8,7 @@
 
 #import "StickerCell.h"
 #import "Masonry.h"
-#import "KMCFilter.h"
+#import <KMCFuFilter/KMCFilter.h>
 #import "UIImageView+WebCache.h"
 #import "FilterManager.h"
 #import "MBProgressHUD.h"

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KMCFilter.h"
-#import "KMCArMaterial.h"
+#import <KMCFuFilter/KMCFilter.h>
+#import <KMCFuFilter/KMCArMaterial.h>
 
 @interface FilterManager : NSObject
 
