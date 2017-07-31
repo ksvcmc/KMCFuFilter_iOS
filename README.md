@@ -80,6 +80,8 @@
 6.参照文档和DEMO填写TOKEN，就可以Run通项目了。  
 7.试用中或试用结束后，有意愿购买该服务可以与我们的商务人员联系购买。  
 （商务Email:KSC-VBU-KMC@kingsoft.com）
+## Demo下载
+![Alt text](https://raw.githubusercontent.com/wiki/ksvcmc/KMCFuFilter_iOS/fucode.png)
 
 ## 反馈与建议
 主页：https://docs.ksyun.com/read/latest/142/_book/index.html  
