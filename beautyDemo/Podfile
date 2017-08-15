@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+#use_frameworks!
+
+target 'KMCFuFilterBeautyDemo' do
+  pod 'libksygpulive/libksygpulive'
+  pod 'GPUImage',  '0.1.7'
+  pod 'libksygpulive/KSYGPUResource'
+  pod 'Masonry'
+  pod 'SDWebImage'
+  #pod 'KMCFuFilter’
+  pod 'KMCFuFilter’,:path => ‘../‘
+end
+
+

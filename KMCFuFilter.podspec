@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KMCFuFilter"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "faceunity贴纸+金山直播"
 
   s.ios.deployment_target = "8.0"
@@ -123,6 +123,7 @@ Pod::Spec.new do |s|
 
   # s.framework  = "framework/KMCStFilter"
   # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.framework = "Accelerate"
   s.vendored_frameworks ="framework/KMCFuFilter.framework"
 
   # s.library   = "iconv"

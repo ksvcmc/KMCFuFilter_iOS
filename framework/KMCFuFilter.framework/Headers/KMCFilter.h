@@ -116,4 +116,19 @@ typedef enum : NSUInteger {
  */
 @property(nonatomic,strong) GPUImageOutput<GPUImageInput>* filter;
 
+#pragma 美颜接口
+@property (nonatomic,strong) NSString* filterType;
+//美白接口（0-10）
+@property (nonatomic,assign) float colorLevel;
+// 磨皮 取值范围为0-6
+@property (nonatomic,assign) float blurLevel;
+// 红润 取值范围为0-10
+@property (nonatomic,assign) float redLevel;
+// 瘦脸 （大于等于0的浮点数，0为关闭效果，1为默认效果，大于1为进一步增强效果）
+@property (nonatomic,assign) float cheekThinning;
+// 大眼 （大于等于0的浮点数，0为关闭效果，1为默认效果，大于1为进一步增强效果）
+@property (nonatomic,assign) float eyeEnlarging;
+// 美型  默认（3）、女神（0）、网红（1）、自然（2）
+@property (nonatomic,assign) int faceShape;
+
 @end
