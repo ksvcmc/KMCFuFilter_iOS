@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CC7DCF423FF9E2E8CB50B27A /* libPods-KMCFuFilterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFD52905C87153C697DEA92 /* libPods-KMCFuFilterDemo.a */; };
-		F2128EF21ED56FE500A6162F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EF01ED56FE500A6162F /* AppDelegate.m */; };
-		F2128EF31ED56FE500A6162F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2128EF11ED56FE500A6162F /* Assets.xcassets */; };
-		F2128EF81ED56FF900A6162F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2128EF41ED56FF900A6162F /* LaunchScreen.storyboard */; };
-		F2128EF91ED56FF900A6162F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2128EF61ED56FF900A6162F /* Main.storyboard */; };
-		F2128F081ED5700F00A6162F /* FilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EFB1ED5700F00A6162F /* FilterManager.m */; };
-		F2128F091ED5700F00A6162F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2128EFC1ED5700F00A6162F /* Info.plist */; };
-		F2128F0A1ED5700F00A6162F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EFD1ED5700F00A6162F /* main.m */; };
-		F2128F0B1ED5700F00A6162F /* StickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128EFF1ED5700F00A6162F /* StickerCell.m */; };
-		F2128F0C1ED5700F00A6162F /* StickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F011ED5700F00A6162F /* StickerView.m */; };
-		F2128F0D1ED5700F00A6162F /* UIButton+init.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F031ED5700F00A6162F /* UIButton+init.m */; };
-		F2128F0E1ED5700F00A6162F /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F051ED5700F00A6162F /* UIColor+Expanded.m */; };
-		F2128F0F1ED5700F00A6162F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2128F071ED5700F00A6162F /* ViewController.m */; };
 		F2128F121ED5703000A6162F /* KMCFuFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2128F111ED5703000A6162F /* KMCFuFilter.framework */; };
+		F22DD9E11F42CAAE002832F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9C61F42CAAE002832F9 /* AppDelegate.m */; };
+		F22DD9E21F42CAAE002832F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9C71F42CAAE002832F9 /* Assets.xcassets */; };
+		F22DD9E31F42CAAE002832F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9C81F42CAAE002832F9 /* LaunchScreen.storyboard */; };
+		F22DD9E41F42CAAE002832F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9CA1F42CAAE002832F9 /* Main.storyboard */; };
+		F22DD9E51F42CAAE002832F9 /* FilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9CE1F42CAAE002832F9 /* FilterManager.m */; };
+		F22DD9E61F42CAAE002832F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9D01F42CAAE002832F9 /* LICENSE */; };
+		F22DD9E71F42CAAE002832F9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9D21F42CAAE002832F9 /* MBProgressHUD.m */; };
+		F22DD9E81F42CAAE002832F9 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9D31F42CAAE002832F9 /* README.mdown */; };
+		F22DD9E91F42CAAE002832F9 /* UIButton+init.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9D51F42CAAE002832F9 /* UIButton+init.m */; };
+		F22DD9EA1F42CAAE002832F9 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9D71F42CAAE002832F9 /* UIColor+Expanded.m */; };
+		F22DD9EB1F42CAAE002832F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9D81F42CAAE002832F9 /* Info.plist */; };
+		F22DD9EC1F42CAAE002832F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9D91F42CAAE002832F9 /* main.m */; };
+		F22DD9ED1F42CAAE002832F9 /* StickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9DC1F42CAAE002832F9 /* StickerCell.m */; };
+		F22DD9EE1F42CAAE002832F9 /* StickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9DE1F42CAAE002832F9 /* StickerView.m */; };
+		F22DD9EF1F42CAAE002832F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9E01F42CAAE002832F9 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,26 +31,30 @@
 		4551A9D2F8E48490F2FB2DF4 /* Pods-KMCFuFilterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4CF61593D9B7E65305237EF9 /* Pods-KMCFuFilterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCFuFilterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2128EEF1ED56FE500A6162F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KMCFilterDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		F2128EF01ED56FE500A6162F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KMCFilterDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		F2128EF11ED56FE500A6162F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = KMCFilterDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		F2128EF51ED56FF900A6162F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KMCFilterDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		F2128EF71ED56FF900A6162F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KMCFilterDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		F2128EFA1ED5700F00A6162F /* FilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterManager.h; path = KMCFilterDemo/FilterManager.h; sourceTree = SOURCE_ROOT; };
-		F2128EFB1ED5700F00A6162F /* FilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterManager.m; path = KMCFilterDemo/FilterManager.m; sourceTree = SOURCE_ROOT; };
-		F2128EFC1ED5700F00A6162F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KMCFilterDemo/Info.plist; sourceTree = SOURCE_ROOT; };
-		F2128EFD1ED5700F00A6162F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KMCFilterDemo/main.m; sourceTree = SOURCE_ROOT; };
-		F2128EFE1ED5700F00A6162F /* StickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickerCell.h; path = KMCFilterDemo/StickerCell.h; sourceTree = SOURCE_ROOT; };
-		F2128EFF1ED5700F00A6162F /* StickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StickerCell.m; path = KMCFilterDemo/StickerCell.m; sourceTree = SOURCE_ROOT; };
-		F2128F001ED5700F00A6162F /* StickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickerView.h; path = KMCFilterDemo/StickerView.h; sourceTree = SOURCE_ROOT; };
-		F2128F011ED5700F00A6162F /* StickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StickerView.m; path = KMCFilterDemo/StickerView.m; sourceTree = SOURCE_ROOT; };
-		F2128F021ED5700F00A6162F /* UIButton+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+init.h"; path = "KMCFilterDemo/UIButton+init.h"; sourceTree = SOURCE_ROOT; };
-		F2128F031ED5700F00A6162F /* UIButton+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+init.m"; path = "KMCFilterDemo/UIButton+init.m"; sourceTree = SOURCE_ROOT; };
-		F2128F041ED5700F00A6162F /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "KMCFilterDemo/UIColor+Expanded.h"; sourceTree = SOURCE_ROOT; };
-		F2128F051ED5700F00A6162F /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Expanded.m"; path = "KMCFilterDemo/UIColor+Expanded.m"; sourceTree = SOURCE_ROOT; };
-		F2128F061ED5700F00A6162F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = KMCFilterDemo/ViewController.h; sourceTree = SOURCE_ROOT; };
-		F2128F071ED5700F00A6162F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = KMCFilterDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
 		F2128F111ED5703000A6162F /* KMCFuFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCFuFilter.framework; path = ../framework/KMCFuFilter.framework; sourceTree = "<group>"; };
+		F22DD9C51F42CAAE002832F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F22DD9C61F42CAAE002832F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F22DD9C71F42CAAE002832F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22DD9C91F42CAAE002832F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F22DD9CB1F42CAAE002832F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F22DD9CD1F42CAAE002832F9 /* FilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterManager.h; sourceTree = "<group>"; };
+		F22DD9CE1F42CAAE002832F9 /* FilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterManager.m; sourceTree = "<group>"; };
+		F22DD9D01F42CAAE002832F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F22DD9D11F42CAAE002832F9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F22DD9D21F42CAAE002832F9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F22DD9D31F42CAAE002832F9 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		F22DD9D41F42CAAE002832F9 /* UIButton+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+init.h"; sourceTree = "<group>"; };
+		F22DD9D51F42CAAE002832F9 /* UIButton+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+init.m"; sourceTree = "<group>"; };
+		F22DD9D61F42CAAE002832F9 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		F22DD9D71F42CAAE002832F9 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		F22DD9D81F42CAAE002832F9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22DD9D91F42CAAE002832F9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F22DD9DB1F42CAAE002832F9 /* StickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerCell.h; sourceTree = "<group>"; };
+		F22DD9DC1F42CAAE002832F9 /* StickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerCell.m; sourceTree = "<group>"; };
+		F22DD9DD1F42CAAE002832F9 /* StickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerView.h; sourceTree = "<group>"; };
+		F22DD9DE1F42CAAE002832F9 /* StickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerView.m; sourceTree = "<group>"; };
+		F22DD9DF1F42CAAE002832F9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F22DD9E01F42CAAE002832F9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +82,7 @@
 		F2128ECC1ED56FB300A6162F = {
 			isa = PBXGroup;
 			children = (
-				F2128ED71ED56FB300A6162F /* KMCFuFilterDemo */,
+				F22DD9C41F42CAAE002832F9 /* KMCFilterDemo */,
 				F2128ED61ED56FB300A6162F /* Products */,
 				F2128F101ED5703000A6162F /* Frameworks */,
 				0F63551C29CC30EB424029F9 /* Pods */,
@@ -90,40 +97,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2128ED71ED56FB300A6162F /* KMCFuFilterDemo */ = {
-			isa = PBXGroup;
-			children = (
-				F2128EEF1ED56FE500A6162F /* AppDelegate.h */,
-				F2128EFA1ED5700F00A6162F /* FilterManager.h */,
-				F2128EFB1ED5700F00A6162F /* FilterManager.m */,
-				F2128EFC1ED5700F00A6162F /* Info.plist */,
-				F2128EFD1ED5700F00A6162F /* main.m */,
-				F2128EFE1ED5700F00A6162F /* StickerCell.h */,
-				F2128EFF1ED5700F00A6162F /* StickerCell.m */,
-				F2128F001ED5700F00A6162F /* StickerView.h */,
-				F2128F011ED5700F00A6162F /* StickerView.m */,
-				F2128F021ED5700F00A6162F /* UIButton+init.h */,
-				F2128F031ED5700F00A6162F /* UIButton+init.m */,
-				F2128F041ED5700F00A6162F /* UIColor+Expanded.h */,
-				F2128F051ED5700F00A6162F /* UIColor+Expanded.m */,
-				F2128F061ED5700F00A6162F /* ViewController.h */,
-				F2128F071ED5700F00A6162F /* ViewController.m */,
-				F2128EF41ED56FF900A6162F /* LaunchScreen.storyboard */,
-				F2128EF61ED56FF900A6162F /* Main.storyboard */,
-				F2128EF01ED56FE500A6162F /* AppDelegate.m */,
-				F2128ED81ED56FB300A6162F /* Supporting Files */,
-			);
-			path = KMCFuFilterDemo;
-			sourceTree = "<group>";
-		};
-		F2128ED81ED56FB300A6162F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F2128EF11ED56FE500A6162F /* Assets.xcassets */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F2128F101ED5703000A6162F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +104,60 @@
 				1CFD52905C87153C697DEA92 /* libPods-KMCFuFilterDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F22DD9C41F42CAAE002832F9 /* KMCFilterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F22DD9C51F42CAAE002832F9 /* AppDelegate.h */,
+				F22DD9C61F42CAAE002832F9 /* AppDelegate.m */,
+				F22DD9C71F42CAAE002832F9 /* Assets.xcassets */,
+				F22DD9C81F42CAAE002832F9 /* LaunchScreen.storyboard */,
+				F22DD9CA1F42CAAE002832F9 /* Main.storyboard */,
+				F22DD9CC1F42CAAE002832F9 /* common */,
+				F22DD9D81F42CAAE002832F9 /* Info.plist */,
+				F22DD9D91F42CAAE002832F9 /* main.m */,
+				F22DD9DA1F42CAAE002832F9 /* view */,
+				F22DD9DF1F42CAAE002832F9 /* ViewController.h */,
+				F22DD9E01F42CAAE002832F9 /* ViewController.m */,
+			);
+			path = KMCFilterDemo;
+			sourceTree = "<group>";
+		};
+		F22DD9CC1F42CAAE002832F9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F22DD9CD1F42CAAE002832F9 /* FilterManager.h */,
+				F22DD9CE1F42CAAE002832F9 /* FilterManager.m */,
+				F22DD9CF1F42CAAE002832F9 /* MBProgressHUD */,
+				F22DD9D41F42CAAE002832F9 /* UIButton+init.h */,
+				F22DD9D51F42CAAE002832F9 /* UIButton+init.m */,
+				F22DD9D61F42CAAE002832F9 /* UIColor+Expanded.h */,
+				F22DD9D71F42CAAE002832F9 /* UIColor+Expanded.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F22DD9CF1F42CAAE002832F9 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F22DD9D01F42CAAE002832F9 /* LICENSE */,
+				F22DD9D11F42CAAE002832F9 /* MBProgressHUD.h */,
+				F22DD9D21F42CAAE002832F9 /* MBProgressHUD.m */,
+				F22DD9D31F42CAAE002832F9 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F22DD9DA1F42CAAE002832F9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F22DD9DB1F42CAAE002832F9 /* StickerCell.h */,
+				F22DD9DC1F42CAAE002832F9 /* StickerCell.m */,
+				F22DD9DD1F42CAAE002832F9 /* StickerView.h */,
+				F22DD9DE1F42CAAE002832F9 /* StickerView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,10 +222,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2128F091ED5700F00A6162F /* Info.plist in Resources */,
-				F2128EF91ED56FF900A6162F /* Main.storyboard in Resources */,
-				F2128EF31ED56FE500A6162F /* Assets.xcassets in Resources */,
-				F2128EF81ED56FF900A6162F /* LaunchScreen.storyboard in Resources */,
+				F22DD9E41F42CAAE002832F9 /* Main.storyboard in Resources */,
+				F22DD9E21F42CAAE002832F9 /* Assets.xcassets in Resources */,
+				F22DD9E61F42CAAE002832F9 /* LICENSE in Resources */,
+				F22DD9EB1F42CAAE002832F9 /* Info.plist in Resources */,
+				F22DD9E31F42CAAE002832F9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,32 +285,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2128EF21ED56FE500A6162F /* AppDelegate.m in Sources */,
-				F2128F0D1ED5700F00A6162F /* UIButton+init.m in Sources */,
-				F2128F0F1ED5700F00A6162F /* ViewController.m in Sources */,
-				F2128F0B1ED5700F00A6162F /* StickerCell.m in Sources */,
-				F2128F0E1ED5700F00A6162F /* UIColor+Expanded.m in Sources */,
-				F2128F0A1ED5700F00A6162F /* main.m in Sources */,
-				F2128F0C1ED5700F00A6162F /* StickerView.m in Sources */,
-				F2128F081ED5700F00A6162F /* FilterManager.m in Sources */,
+				F22DD9EA1F42CAAE002832F9 /* UIColor+Expanded.m in Sources */,
+				F22DD9EE1F42CAAE002832F9 /* StickerView.m in Sources */,
+				F22DD9E11F42CAAE002832F9 /* AppDelegate.m in Sources */,
+				F22DD9E81F42CAAE002832F9 /* README.mdown in Sources */,
+				F22DD9EF1F42CAAE002832F9 /* ViewController.m in Sources */,
+				F22DD9E71F42CAAE002832F9 /* MBProgressHUD.m in Sources */,
+				F22DD9E91F42CAAE002832F9 /* UIButton+init.m in Sources */,
+				F22DD9ED1F42CAAE002832F9 /* StickerCell.m in Sources */,
+				F22DD9EC1F42CAAE002832F9 /* main.m in Sources */,
+				F22DD9E51F42CAAE002832F9 /* FilterManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F2128EF41ED56FF900A6162F /* LaunchScreen.storyboard */ = {
+		F22DD9C81F42CAAE002832F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F2128EF51ED56FF900A6162F /* Base */,
+				F22DD9C91F42CAAE002832F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F2128EF61ED56FF900A6162F /* Main.storyboard */ = {
+		F22DD9CA1F42CAAE002832F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F2128EF71ED56FF900A6162F /* Base */,
+				F22DD9CB1F42CAAE002832F9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -410,7 +440,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo.sticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -443,7 +473,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo.sticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

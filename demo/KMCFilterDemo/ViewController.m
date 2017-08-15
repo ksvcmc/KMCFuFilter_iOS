@@ -35,7 +35,7 @@
 
 #ifdef FUFILTER
 #define buttonCount 1
-#define TOKEID @"f84e84913561f0478f53ef9cf51e8565"
+#define TOKEID @"bd5f5bb6bbbd33360645a7eaee517ac0"
 #endif
 
 #ifdef STFILTER
@@ -250,10 +250,9 @@
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             hud.mode = MBProgressHUDModeText;
             hud.color = [UIColor clearColor];
-            hud.label.text = material.strTriggerActionTip;
-            hud.label.textColor = [UIColor colorWithHexString:@"#FFFFFF"];
-            hud.label.font = FONT(24);
-            hud.label.shadowColor = [UIColor blackColor];
+            hud.labelText = material.strTriggerActionTip;
+            hud.labelColor = [UIColor colorWithHexString:@"#FFFFFF"];
+            hud.labelFont = FONT(24);
             
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [MBProgressHUD hideAllHUDsForView:self.view animated:NO];

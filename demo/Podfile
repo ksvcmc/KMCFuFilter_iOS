@@ -8,8 +8,7 @@ target 'KMCFuFilterDemo' do
   pod 'libksygpulive/KSYGPUResource'
   pod 'Masonry'
   pod 'SDWebImage'
-  pod 'MBProgressHUD'
-  pod 'KMCFuFilter’
+  pod 'KMCFuFilter’,:path=>'../'
 end
 
 

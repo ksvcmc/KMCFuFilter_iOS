@@ -28,7 +28,7 @@
 }
 @property (nonatomic, strong) UICollectionView * stickerConfigView;// 贴纸view
 @property (nonatomic, strong) NSMutableDictionary *cellDic;
-@property (nonatomic, assign) int action;//0:人脸 1:动作
+@property (nonatomic, assign) int action;//0:人脸 1:动作 2:全部
 
 @end
 
@@ -91,9 +91,14 @@
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if(_action)
+    if(_action == 0){
+        return [[FilterManager instance] faceMaterialCount]+1;
+    }else if(_action == 1){
         return [[FilterManager instance] actionMaterialCount]+1;
-    return [[FilterManager instance] faceMaterialCount]+1;
+    }else if(_action == 2){
+        return [[FilterManager instance] allMaterialCount]+1;
+    }
+    return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -112,10 +117,14 @@
     
     KMCArMaterial * material;
     if(indexPath.row >0){
-        if(_action)
-            material= [[FilterManager instance]actionMaterialAtIndex:(indexPath.row -1)];
-        else
+        if(_action == 0){
             material= [[FilterManager instance]faceMaterialAtIndex:(indexPath.row -1)];
+        }else if(_action == 1){
+            material= [[FilterManager instance]actionMaterialAtIndex:(indexPath.row -1)];
+        }else if(_action == 2){
+            material= [[FilterManager instance]allMaterialAtIndex:(indexPath.row -1)];
+        }
+        
     }else{
         material = nil;
     }

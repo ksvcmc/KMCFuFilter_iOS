@@ -25,6 +25,10 @@
 -(NSInteger)actionMaterialCount;
 -(KMCArMaterial *)actionMaterialAtIndex:(NSInteger)index;
 
+//全部贴纸
+-(NSInteger)allMaterialCount;
+-(KMCArMaterial *)allMaterialAtIndex:(NSInteger)index;
+
 @property (nonatomic, strong) KMCFilter * kmcFitler; //贴纸filter
 
 @end

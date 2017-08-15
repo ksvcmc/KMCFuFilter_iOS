@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray<KMCArMaterial *>* faceMaterialList;
 @property (nonatomic, strong) NSMutableArray<KMCArMaterial *>* actionMaterialList;
+@property (nonatomic, strong) NSMutableArray<KMCArMaterial *>* allMaterialList;
 
 @end
 
@@ -32,6 +33,7 @@
         _kmcFitler = [[KMCFilter alloc]init];
         _faceMaterialList = [[NSMutableArray alloc]init];
         _actionMaterialList = [[NSMutableArray alloc]init];
+        _allMaterialList = [[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -49,6 +51,7 @@
                                             }else{
                                                 [_actionMaterialList addObject:material];
                                             }
+                                            [_allMaterialList addObject:material];
                                         }
                                         if(completeSuccess)
                                             completeSuccess();
@@ -62,7 +65,7 @@
 
                                     }];
     } onFailure:^(AuthorizeError iErrorCode){
-        NSString * errorMessage = [[NSString alloc]initWithFormat:@"鉴权失败，错误码:%d",iErrorCode];
+        NSString * errorMessage = [[NSString alloc]initWithFormat:@"鉴权失败，错误码:%lu",(unsigned long)iErrorCode];
         dispatch_async(dispatch_get_main_queue(), ^{
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误提示" message:errorMessage delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
             [alert show];
@@ -86,6 +89,15 @@
 
 -(KMCArMaterial *)actionMaterialAtIndex:(NSInteger)index{
     return _actionMaterialList[index];
+}
+
+
+-(NSInteger)allMaterialCount{
+    return (NSInteger)_allMaterialList.count;
+}
+
+-(KMCArMaterial *)allMaterialAtIndex:(NSInteger)index{
+    return _allMaterialList[index];
 }
 
 @end
