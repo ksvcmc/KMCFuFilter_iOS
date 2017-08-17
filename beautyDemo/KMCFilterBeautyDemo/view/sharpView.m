@@ -8,6 +8,9 @@
 
 #import "sharpView.h"
 
+#define buttonC 4
+#define buttonWidth (int)((kScreenSizeWidth - 31)/(buttonC+1)-16)
+
 @interface sharpView(){
 }
 
@@ -110,25 +113,25 @@
     [_faceButton1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(16);
         make.leading.equalTo(self.faceLabel.mas_trailing).offset(16);
-        make.width.mas_equalTo(50);
+        make.width.mas_equalTo(buttonWidth);
         make.height.mas_equalTo(20);
     }];
     [_faceButton2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(16);
-        make.leading.equalTo(self.faceButton1.mas_trailing).offset(32);
-        make.width.mas_equalTo(50);
+        make.leading.equalTo(self.faceButton1.mas_trailing).offset(16);
+        make.width.mas_equalTo(buttonWidth);
         make.height.mas_equalTo(20);
     }];
     [_faceButton3 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(16);
-        make.leading.equalTo(self.faceButton2.mas_trailing).offset(32);
-        make.width.mas_equalTo(50);
+        make.leading.equalTo(self.faceButton2.mas_trailing).offset(16);
+        make.width.mas_equalTo(buttonWidth);
         make.height.mas_equalTo(20);
     }];
     [_faceButton4 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(16);
-        make.leading.equalTo(self.faceButton3.mas_trailing).offset(32);
-        make.width.mas_equalTo(50);
+        make.leading.equalTo(self.faceButton3.mas_trailing).offset(16);
+        make.width.mas_equalTo(buttonWidth);
         make.height.mas_equalTo(20);
     }];
     

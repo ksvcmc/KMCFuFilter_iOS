@@ -22,6 +22,7 @@
 
 @property (nonatomic, strong) KSYGPUStreamerKit *streamerKit;
 @property (nonatomic, strong) UIButton* startButton;
+@property (nonatomic, strong) UIButton* closeButton;
 @property (nonatomic, strong) UIButton* filterButton;
 @property (nonatomic, strong) UIButton* beautyButton;
 @property (nonatomic, strong) UIButton* sharpButton;
@@ -84,6 +85,12 @@
     _startButton =[UIButton buttonWithFrame:CGRectMake(kScreenSizeWidth/2-35,kScreenSizeHeight-70-36-kalgoHeight,70,70) target:self normal:@"start" highlited:nil selected:nil selector:@selector(start:)];
     [_startButton setImage:[UIImage imageNamed:@"stop"] forState:UIControlStateSelected];
     _startButton.frame = CGRectMake(kScreenSizeWidth/2-35,kScreenSizeHeight-70-36-kalgoHeight,70,70);
+    
+    //关闭按钮
+    _closeButton = [[UIButton alloc] init];
+    [_closeButton setImage:[UIImage imageNamed:@"backtoMain"] forState:UIControlStateNormal];
+    [_closeButton addTarget:self action:@selector(close:) forControlEvents:UIControlEventTouchUpInside];
+
     //录制按钮
     _recordLabel = [[UILabel alloc] init];
     _recordLabel.font = [UIFont systemFontOfSize:18];
@@ -154,6 +161,7 @@
     //addsubview
     [self.view addSubview:switchCameraBtn];
     [self.view addSubview:_startButton];
+    [self.view addSubview:_closeButton];
     [self.view addSubview:_topView];
     [self.view addSubview:_recordLabel];
     [_topView addSubview:_filterView];
@@ -167,8 +175,15 @@
     
     [switchCameraBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(23);
+        make.top.equalTo(self.view).offset(37);
     }];
+    [_closeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.view).offset(16);
+        make.top.equalTo(self.view).offset(37);
+        make.width.mas_equalTo(23);
+        make.height.mas_equalTo(23);
+    }];
+    
     
     [_recordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
@@ -214,6 +229,16 @@
 -(void)switchCamera:(UIButton* )sender{
     if(_streamerKit)
         [_streamerKit switchCamera];
+}
+
+-(void)close:(UIButton *)sender{
+    if(_streamerKit.streamerBase.streamState == KSYStreamStateConnected){
+        [self stopTimer];
+        [_streamerKit.streamerBase stopStream];
+        if(_localRecord)
+            [self saveToPhotoLibrary];
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)start:(UIButton* )sender{
@@ -437,13 +462,15 @@ touch
 }
 
 - (void)handleProgressTimer:(NSTimer *)timer {
-    self.recordLabel.hidden = NO;
-    time++;
-    
-    int minutes = (int)(time/60);
-    int seconds = (int)(time- 60*minutes);
-    
-    self.recordLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)minutes, (long)seconds];
+    if(_localRecord){
+        self.recordLabel.hidden = NO;
+        time++;
+        
+        int minutes = (int)(time/60);
+        int seconds = (int)(time- 60*minutes);
+        
+        self.recordLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)minutes, (long)seconds];
+    }
 }
 
 -(void)saveToPhotoLibrary{

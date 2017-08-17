@@ -32,7 +32,7 @@
    
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.numberOfLines = 8;
-    titleLabel.text = @"faceunity提供的AR贴纸、美颜功能可\n运用在金山直播SDK、短视频SDK上，\n其他SDK要根据其开放性决定\n\n若想进一步了解请联系我们\n邮件：KSC-VBU-KMC@kingsof.con";
+    titleLabel.text = @"faceunity提供的AR贴纸、美颜功能可\n运用在金山直播SDK、短视频SDK上，\n其他SDK要根据其开放性决定\n\n若想进一步了解请联系我们\n邮件：KSC-VBU-KMC@kingsoft.com";
     [titleLabel sizeToFit];
     titleLabel.textColor = [UIColor colorWithHexString:@"#ffffff"];
     titleLabel.font = FONT(16);

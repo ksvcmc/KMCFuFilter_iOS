@@ -31,7 +31,6 @@
 @property (nonatomic, strong) UISwitch * saveSwitch;
 @property (nonatomic, strong) UIButton * beautyButton;
 @property (nonatomic, strong) UIButton * helpButton;
-@property (nonatomic, strong) UILabel * helpLabel;
 @property (nonatomic, assign) BOOL localRecord;
 
 @end
@@ -46,12 +45,13 @@
     UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bgViewDidPressed)];
     [self.view addGestureRecognizer:tapGes];
     
+    [self Auth];
+    
     // Do any additional setup after loading the view.
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self Auth];
 }
 
 -(void)setupUI{
@@ -98,13 +98,11 @@
     
     _helpButton = [[UIButton alloc] init];
     [_helpButton setImage:[UIImage imageNamed:@"help"] forState:UIControlStateNormal];
+    [_helpButton setTitle:@"Demo说明" forState:UIControlStateNormal];
+    [_helpButton setTintColor:[UIColor colorWithHexString:@"#FFFFFF"]];
     [_helpButton addTarget:self action:@selector(help) forControlEvents:UIControlEventTouchUpInside];
+    _helpButton.titleEdgeInsets = UIEdgeInsetsMake(0, 6, 0, 0);
 
-    
-    _helpLabel = [[UILabel alloc] init];
-    _helpLabel.text = @"Demo说明";
-    _helpLabel.font = [UIFont systemFontOfSize:14];
-    _helpLabel.textColor = [UIColor colorWithHexString:@"#FFFFFF"];
     
     [self.view addSubview:_showView];
     [self.view addSubview:_titleLabel];
@@ -114,7 +112,6 @@
     [self.view addSubview:_saveSwitch];
     [self.view addSubview:_beautyButton];
     [self.view addSubview:_helpButton];
-    [self.view addSubview:_helpLabel];
 
     [_showView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.top.equalTo(self.view);
@@ -157,15 +154,10 @@
     }];
     
     [_helpButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(137);
+        make.centerX.equalTo(self.view);
         make.bottom.equalTo(self.view).offset(-27);
         make.height.mas_equalTo(18);
-        make.width.mas_equalTo(18);
-    }];
-    
-    [_helpLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.equalTo(self.view).offset(-137);
-        make.bottom.equalTo(self.view).offset(-27);
+        make.width.mas_equalTo(150);
     }];
 }
 
