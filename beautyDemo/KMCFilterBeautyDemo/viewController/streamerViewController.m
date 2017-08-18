@@ -15,8 +15,10 @@
 #import "sharpView.h"
 #import "FilterManager.h"
 
+
 @interface streamerViewController ()<sharpViewDelegate,filterViewDelegate,beautyViewDelegate,UIGestureRecognizerDelegate>{
     NSTimer *_playbackProgressTimer;
+    KSYReachability *_reach;
     int time;
 }
 
@@ -55,6 +57,10 @@
                name:KSYStreamStateDidChangeNotification
              object:nil];
     
+    [UIApplication sharedApplication].idleTimerDisabled=YES;
+    
+    _reach = [KSYReachability reachabilityWithHostName:@"http://www.baidu.com"];
+    [_reach startNotifier];
 }
 
 - (void)prepareStreamerKit{
@@ -415,6 +421,21 @@ touch
             [self startRecordToLocalFile];
         }
     }
+    
+    if(_streamerKit.streamerBase.streamState == KSYStreamStateError)
+    {
+        if([_reach currentReachabilityStatus] == KSYNotReachable){
+            NSString * errorMessage = [[NSString alloc]initWithFormat:@"网络连接失败，请检测你的网络设置"];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:errorMessage delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
+            [alert show];
+
+        }else{
+            NSString * errorMessage = [[NSString alloc]initWithFormat:@"推流失败，请稍后再试"];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:errorMessage delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
+            [alert show];
+
+        }
+    }
 }
 
 #pragma 本地录制
@@ -512,6 +533,11 @@ touch
 #pragma sharpViewDelegate
 - (void)sharpChanged:(int)type{
     [FilterManager instance].kmcFitler.faceShape = type;
+    //大眼和瘦脸的值会改变，修改UI
+    _sharpView.slider1.value = [FilterManager instance].kmcFitler.eyeEnlarging;
+    _sharpView.label12.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider1.value];
+    _sharpView.slider2.value = [FilterManager instance].kmcFitler.cheekThinning;
+    _sharpView.label22.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider2.value];
 }
 - (void)cheekThinningChanged:(float)value{
     [FilterManager instance].kmcFitler.cheekThinning = value;
