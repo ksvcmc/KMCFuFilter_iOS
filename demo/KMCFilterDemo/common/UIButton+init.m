@@ -25,9 +25,12 @@
     // target
     [btn addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
     // image
-    [btn setImage:[UIImage imageNamed:image_nm] forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:image_hl] forState:UIControlStateHighlighted];
-    [btn setImage:[UIImage imageNamed:image_sel] forState:UIControlStateSelected];
+    if(image_nm)
+        [btn setImage:[UIImage imageNamed:image_nm] forState:UIControlStateNormal];
+    if(image_hl)
+        [btn setImage:[UIImage imageNamed:image_hl] forState:UIControlStateHighlighted];
+    if(image_sel)
+        [btn setImage:[UIImage imageNamed:image_sel] forState:UIControlStateSelected];
     [btn sizeToFit];
     return btn;
 }
