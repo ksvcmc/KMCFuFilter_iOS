@@ -9,7 +9,7 @@
 ## 鉴权
 SDK在使用时需要用token进行鉴权后方可使用，token申请方式见**接入步骤**部分;  
 token与应用包名为一一对应的关系;
-
+鉴权错误码见：(https://github.com/ksvcmc/KMCAgoraVRTC_Android/wiki/auth_error)
 ## 安装
 安装包分为三部分:
 - **demo**:可运行的贴纸程序
