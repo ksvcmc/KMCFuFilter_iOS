@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KMCFuFilter"
-  s.version      = "1.0.4"
-  s.summary      = "faceunity贴纸+金山直播"
+  s.version      = "1.1.4"
+  s.summary      = "faceunity贴纸/美颜+金山直播"
 
   s.ios.deployment_target = "8.0"
 
