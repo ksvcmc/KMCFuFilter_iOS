@@ -12,7 +12,8 @@ token与应用包名为一一对应的关系;
 
 ## 安装
 安装包分为三部分:
-- **demo**:可运行的示例程序
+- **demo**:可运行的贴纸程序
+- **beautydemo**:可运行的美颜程序
 - **doc**:说明文档
 
 目前sdk支持pod导入.
@@ -60,6 +61,36 @@ token与应用包名为一一对应的关系;
 ```
 -(void)startShowingMaterial:(KMCArMaterial *)material;
 ```
++ **美颜相关**
+滤镜目前提供"nature", "delta", "electric", "slowlived", "tokyo", "warm"6种，相关属性：
+```
+@property (nonatomic,strong) NSString* filterType;
+```
+磨皮属性，该参数的推荐取值范围为[0, 6]，0为无效果，对应7个不同的磨皮程度。
+```
+@property (nonatomic,assign) float blurLevel;
+```
+美白属性，当滤镜设置为美白滤镜 "nature" 时，通过参数来控制美白程度。当滤镜为其他风格化滤镜时，该参数用于控制风格化程度。该参数取值为大于等于0的浮点数，0为无效果，1为默认效果，大于1为继续增强效果。
+```
+@property (nonatomic,assign) float colorLevel;
+```
+红润属性，类似美白属性。
+```
+@property (nonatomic,assign) float redLevel;
+```
+目前我们支持四种基本脸型：女神、网红、自然、默认。由参数 face_shape 指定：默认（3）、女神（0）、网红（1）、自然（2）。
+```
+@property (nonatomic,assign) int faceShape;
+```
+大眼属性，该参数的推荐取值范围为[0, 1]。大于1为继续增强效果。
+```
+@property (nonatomic,assign) float eyeEnlarging;
+```
+瘦脸属性，该参数的推荐取值范围为[0, 1]。大于1为继续增强效果。
+```
+@property (nonatomic,assign) float cheekThinning;
+```
+
 ## 接入流程
 ![金山魔方接入流程](https://raw.githubusercontent.com/wiki/ksvcmc/KMCSTFilter_Android/all.jpg "金山魔方接入流程")
 ## 接入步骤  
