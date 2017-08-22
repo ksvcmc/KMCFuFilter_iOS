@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58FBA95F6C1664E9E4D98C90 /* libPods-KMCFuFilterBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5B202730CC74299E3E1D7 /* libPods-KMCFuFilterBeautyDemo.a */; };
+		1D84AADD0F605D5152FE06EC /* libPods-KMCFuFilterBeautyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7A497AA6C2D4AF06ED9628 /* libPods-KMCFuFilterBeautyDemo.a */; };
 		F22DD9B11F42C596002832F9 /* FilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD98B1F42C596002832F9 /* FilterManager.m */; };
 		F22DD9B21F42C596002832F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F22DD98D1F42C596002832F9 /* LICENSE */; };
 		F22DD9B31F42C596002832F9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD98F1F42C596002832F9 /* MBProgressHUD.m */; };
@@ -30,9 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12E5B202730CC74299E3E1D7 /* libPods-KMCFuFilterBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCFuFilterBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AD42CE126064AB526D96ED2 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterBeautyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterBeautyDemo/Pods-KMCFuFilterBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D7532D2917292B6EA2293EEA /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterBeautyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterBeautyDemo/Pods-KMCFuFilterBeautyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		02989B47DDC31547B464418D /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterBeautyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterBeautyDemo/Pods-KMCFuFilterBeautyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1F7A497AA6C2D4AF06ED9628 /* libPods-KMCFuFilterBeautyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCFuFilterBeautyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C2C7AA8E44A9A545EFDA27 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterBeautyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterBeautyDemo/Pods-KMCFuFilterBeautyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F22DD96E1F42C556002832F9 /* KMCFuFilterBeautyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCFuFilterBeautyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22DD98A1F42C596002832F9 /* FilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterManager.h; sourceTree = "<group>"; };
 		F22DD98B1F42C596002832F9 /* FilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterManager.m; sourceTree = "<group>"; };
@@ -74,26 +74,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58FBA95F6C1664E9E4D98C90 /* libPods-KMCFuFilterBeautyDemo.a in Frameworks */,
+				1D84AADD0F605D5152FE06EC /* libPods-KMCFuFilterBeautyDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BC53EBF10533CF8D6E4C937 /* Frameworks */ = {
+		A1A4511EE8E0AF0A7FD47CB5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				12E5B202730CC74299E3E1D7 /* libPods-KMCFuFilterBeautyDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		61C5E0C779FF764CC6F4646B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D7532D2917292B6EA2293EEA /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */,
-				4AD42CE126064AB526D96ED2 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */,
+				02989B47DDC31547B464418D /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */,
+				94C2C7AA8E44A9A545EFDA27 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,8 +95,8 @@
 			children = (
 				F22DD9881F42C596002832F9 /* KMCFilterBeautyDemo */,
 				F22DD96F1F42C556002832F9 /* Products */,
-				61C5E0C779FF764CC6F4646B /* Pods */,
-				0BC53EBF10533CF8D6E4C937 /* Frameworks */,
+				A1A4511EE8E0AF0A7FD47CB5 /* Pods */,
+				FBEE7C479D72C4E851F18C65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +188,14 @@
 			path = viewController;
 			sourceTree = "<group>";
 		};
+		FBEE7C479D72C4E851F18C65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A497AA6C2D4AF06ED9628 /* libPods-KMCFuFilterBeautyDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,12 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F22DD9851F42C556002832F9 /* Build configuration list for PBXNativeTarget "KMCFuFilterBeautyDemo" */;
 			buildPhases = (
-				6608AA2E306E7ADEA325F7DD /* [CP] Check Pods Manifest.lock */,
+				1FE005B9C0B650EC4FCBAFFA /* [CP] Check Pods Manifest.lock */,
 				F22DD96A1F42C556002832F9 /* Sources */,
 				F22DD96B1F42C556002832F9 /* Frameworks */,
 				F22DD96C1F42C556002832F9 /* Resources */,
-				B7D573FBFF6A5F636A31B588 /* [CP] Embed Pods Frameworks */,
-				2D5007053C5C0CDAB7883C8D /* [CP] Copy Pods Resources */,
+				AFBCD86E546642E2ECB3F67A /* [CP] Embed Pods Frameworks */,
+				616D8CEAC7474539FAD68908 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +230,7 @@
 				TargetAttributes = {
 					F22DD96D1F42C556002832F9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = ZGJ54Q7R45;
+						DevelopmentTeam = 36PUU93BJ2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -269,22 +269,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D5007053C5C0CDAB7883C8D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCFuFilterBeautyDemo/Pods-KMCFuFilterBeautyDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6608AA2E306E7ADEA325F7DD /* [CP] Check Pods Manifest.lock */ = {
+		1FE005B9C0B650EC4FCBAFFA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +284,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B7D573FBFF6A5F636A31B588 /* [CP] Embed Pods Frameworks */ = {
+		616D8CEAC7474539FAD68908 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCFuFilterBeautyDemo/Pods-KMCFuFilterBeautyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFBCD86E546642E2ECB3F67A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -454,10 +454,11 @@
 		};
 		F22DD9861F42C556002832F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7532D2917292B6EA2293EEA /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */;
+			baseConfigurationReference = 02989B47DDC31547B464418D /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZGJ54Q7R45;
+				DEVELOPMENT_TEAM = 36PUU93BJ2;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -469,10 +470,11 @@
 		};
 		F22DD9871F42C556002832F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AD42CE126064AB526D96ED2 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */;
+			baseConfigurationReference = 94C2C7AA8E44A9A545EFDA27 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZGJ54Q7R45;
+				DEVELOPMENT_TEAM = 36PUU93BJ2;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
