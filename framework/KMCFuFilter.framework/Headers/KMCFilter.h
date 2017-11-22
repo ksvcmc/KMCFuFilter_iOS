@@ -128,6 +128,8 @@ typedef enum : NSUInteger {
 @property (nonatomic,assign) float cheekThinning;
 // 大眼 （大于等于0的浮点数，0为关闭效果，1为默认效果，大于1为进一步增强效果）
 @property (nonatomic,assign) float eyeEnlarging;
+// 脸型等级 用以控制变化到指定基础脸型的程度，取值范围为0-1.0, 0为无效果，即关闭美型，1为指定脸型
+@property (nonatomic,assign) float faceShapeLevel;
 // 美型  默认（3）、女神（0）、网红（1）、自然（2）
 @property (nonatomic,assign) int faceShape;
 

@@ -230,7 +230,7 @@
 				TargetAttributes = {
 					F22DD96D1F42C556002832F9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 36PUU93BJ2;
+						DevelopmentTeam = ZGJ54Q7R45;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -457,7 +457,7 @@
 			baseConfigurationReference = 02989B47DDC31547B464418D /* Pods-KMCFuFilterBeautyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36PUU93BJ2;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/Info.plist";
@@ -473,7 +473,7 @@
 			baseConfigurationReference = 94C2C7AA8E44A9A545EFDA27 /* Pods-KMCFuFilterBeautyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36PUU93BJ2;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterBeautyDemo/Supporting Files/Info.plist";

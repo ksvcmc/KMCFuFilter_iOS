@@ -194,7 +194,7 @@
 				TargetAttributes = {
 					F2128ED41ED56FB300A6162F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 36PUU93BJ2;
+						DevelopmentTeam = ZGJ54Q7R45;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -417,7 +417,7 @@
 			baseConfigurationReference = E457B0FDE07D1DE383D9E567 /* Pods-KMCFuFilterDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36PUU93BJ2;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -450,7 +450,7 @@
 			baseConfigurationReference = 1B03E1D77B75D75E479DF6FD /* Pods-KMCFuFilterDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36PUU93BJ2;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (

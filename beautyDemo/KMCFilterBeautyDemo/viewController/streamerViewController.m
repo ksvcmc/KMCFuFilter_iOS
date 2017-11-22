@@ -152,7 +152,8 @@
     _sharpView.label12.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider1.value];
     _sharpView.slider2.value = [FilterManager instance].kmcFitler.cheekThinning;
     _sharpView.label22.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider2.value];
-    
+    _sharpView.slider3.value = [FilterManager instance].kmcFitler.faceShapeLevel;
+    _sharpView.label32.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider3.value];
     //底部view
     UIView *algoView = [[UIView alloc] init];
     algoView.backgroundColor = [UIColor colorWithHexString:@"#18181d"];
@@ -533,17 +534,22 @@ touch
 #pragma sharpViewDelegate
 - (void)sharpChanged:(int)type{
     [FilterManager instance].kmcFitler.faceShape = type;
-    //大眼和瘦脸的值会改变，修改UI
+    //大眼、瘦脸和脸型的值会改变，修改UI
     _sharpView.slider1.value = [FilterManager instance].kmcFitler.eyeEnlarging;
     _sharpView.label12.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider1.value];
     _sharpView.slider2.value = [FilterManager instance].kmcFitler.cheekThinning;
     _sharpView.label22.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider2.value];
+    _sharpView.slider3.value = 1.00;
+    _sharpView.label32.text = [NSString stringWithFormat:@"%.2lf",_sharpView.slider3.value];
 }
 - (void)cheekThinningChanged:(float)value{
     [FilterManager instance].kmcFitler.cheekThinning = value;
 }
 - (void)eyeEnlargingChanged:(float)value{
     [FilterManager instance].kmcFitler.eyeEnlarging = value;
+}
+- (void)faceShapeLevelChanged:(float)value{
+    [FilterManager instance].kmcFitler.faceShapeLevel = value;
 }
 
 @end

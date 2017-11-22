@@ -12,7 +12,7 @@
 - (void)sharpChanged:(int)type;
 - (void)cheekThinningChanged:(float)value;
 - (void)eyeEnlargingChanged:(float)value;
-
+- (void)faceShapeLevelChanged:(float)value;
 @end
 
 @interface sharpView : UIView
@@ -24,6 +24,9 @@
 @property (nonatomic, strong) UIButton * faceButton4;
 @property (nonatomic, strong) UISlider * slider1;
 @property (nonatomic, strong) UISlider * slider2;
+@property (nonatomic, strong) UISlider * slider3;
 @property (nonatomic, strong) UILabel * label12;
 @property (nonatomic, strong) UILabel * label22;
+@property (nonatomic, strong) UILabel * label32;
+
 @end
