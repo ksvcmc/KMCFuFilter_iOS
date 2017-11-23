@@ -91,6 +91,10 @@ token与应用包名为一一对应的关系;
 ```
 @property (nonatomic,assign) float cheekThinning;
 ```
+脸型等级属性，用以控制变化到指定基础脸型的程度，取值范围为0-1.0, 0为无效果，即关闭美型，1为指定脸型。
+```
+@property (nonatomic,assign) float faceShapeLevel;
+```
 
 ## 接入流程
 ![金山魔方接入流程](https://raw.githubusercontent.com/wiki/ksvcmc/KMCSTFilter_Android/all.jpg "金山魔方接入流程")
