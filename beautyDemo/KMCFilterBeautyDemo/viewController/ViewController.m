@@ -75,7 +75,7 @@
     _addressTextField.textColor =[UIColor colorWithHexString:@"#686877"];
     NSString * uuidStr =[[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSString *devCode  = [[uuidStr substringToIndex:3] lowercaseString];
-    NSString *streamSrv  = @"rtmp://test.uplive.ks-cdn.com/live";
+    NSString *streamSrv  = @"rtmp://120.92.224.235/live";
     NSString *streamUrl      = [ NSString stringWithFormat:@"%@/%@", streamSrv, devCode];
     _addressTextField.text = streamUrl;
     
