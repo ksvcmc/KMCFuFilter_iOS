@@ -98,7 +98,7 @@
     [_streamerKit startPreview:self.view];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_streamerKit.streamerBase startStream:[NSURL URLWithString:@"rtmp://test.uplive.ksyun.com/live/456"]];
+        [_streamerKit.streamerBase startStream:[NSURL URLWithString:@"rtmp://120.92.224.235/live/456"]];
     });
 }
 
