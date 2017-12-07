@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2128F121ED5703000A6162F /* KMCFuFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2128F111ED5703000A6162F /* KMCFuFilter.framework */; };
 		F22DD9E11F42CAAE002832F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9C61F42CAAE002832F9 /* AppDelegate.m */; };
 		F22DD9E21F42CAAE002832F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9C71F42CAAE002832F9 /* Assets.xcassets */; };
 		F22DD9E31F42CAAE002832F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9C81F42CAAE002832F9 /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 		51233A2C1F29DF629E6C0B4C /* libPods-KMCFuFilterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCFuFilterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E457B0FDE07D1DE383D9E567 /* Pods-KMCFuFilterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCFuFilterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2128F111ED5703000A6162F /* KMCFuFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCFuFilter.framework; path = ../framework/KMCFuFilter.framework; sourceTree = "<group>"; };
 		F22DD9C51F42CAAE002832F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F22DD9C61F42CAAE002832F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F22DD9C71F42CAAE002832F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2128F121ED5703000A6162F /* KMCFuFilter.framework in Frameworks */,
 				FFB34F8B77C7B0AC8C032ECB /* libPods-KMCFuFilterDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +97,6 @@
 		F2128F101ED5703000A6162F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F2128F111ED5703000A6162F /* KMCFuFilter.framework */,
 				51233A2C1F29DF629E6C0B4C /* libPods-KMCFuFilterDemo.a */,
 			);
 			name = Frameworks;
@@ -438,7 +434,7 @@
 					../framework/KMCFuFilter.framework/Headers,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo.sticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +467,7 @@
 					../framework/KMCFuFilter.framework/Headers,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/KMCFilterDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.KMCFuFilterDemo.sticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -108,8 +108,23 @@ typedef enum : NSUInteger {
  激活素材
  @param material        需要展示的素材
  */
--(void)startShowingMaterial:(KMCArMaterial *)material;
+- (void)startShowingMaterial:(KMCArMaterial *)material;
 
+/**
+ 获取人脸信息
+ @param faceId 被检测的人脸 ID ，未开启多人检测时传 0 ，表示检测第一个人的人脸信息；当开启多人检测时，其取值范围为 [0 ~ maxFaces-1] ，取其中第几个值就代表检测第几个人的人脸信息
+ @param name 人脸信息参数名： "landmarks" , "eye_rotation" , "translation" , "rotation" ....
+ @param pret 作为容器使用的 float 数组指针，获取到的人脸信息会被直接写入该 float 数组。
+ @param number float 数组的长度
+ @return 返回 1 代表获取成功，返回 0 代表获取失败
+ */
+- (int)KmcGetFaceInfo:(int)faceId name:(char *)name pret:(float *)pret number:(int)number;
+
+/**
+ 判断是否检测到人脸：
+ @return 检测到的人脸个数，返回 0 代表没有检测到人脸
+ */
+- (int)KmcIsTracking;
 
 /**
  可以用来设置的filter
