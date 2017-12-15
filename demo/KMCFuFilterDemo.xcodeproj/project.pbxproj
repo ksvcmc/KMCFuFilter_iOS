@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2667785A1FDE8FA600CE1A84 /* DaisyPig.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778531FDE8FA500CE1A84 /* DaisyPig.bundle */; };
+		2667785B1FDE8FA600CE1A84 /* tanghulu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778541FDE8FA500CE1A84 /* tanghulu.bundle */; };
+		2667785C1FDE8FA600CE1A84 /* fu_ztt_520kouh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778551FDE8FA500CE1A84 /* fu_ztt_520kouh.bundle */; };
+		2667785E1FDE8FA600CE1A84 /* tiger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778571FDE8FA500CE1A84 /* tiger.bundle */; };
+		2667785F1FDE8FA600CE1A84 /* chri3.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778581FDE8FA500CE1A84 /* chri3.bundle */; };
+		266778601FDE8FA600CE1A84 /* fu_ztt_live520.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778591FDE8FA600CE1A84 /* fu_ztt_live520.bundle */; };
+		266778681FDE8FB600CE1A84 /* tanghulu.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778611FDE8FB500CE1A84 /* tanghulu.png */; };
+		266778691FDE8FB600CE1A84 /* chri3.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778621FDE8FB500CE1A84 /* chri3.png */; };
+		2667786A1FDE8FB600CE1A84 /* tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778631FDE8FB500CE1A84 /* tiger.png */; };
+		2667786B1FDE8FB600CE1A84 /* fu_ztt_live520.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778641FDE8FB500CE1A84 /* fu_ztt_live520.png */; };
+		2667786D1FDE8FB600CE1A84 /* DaisyPig.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778661FDE8FB600CE1A84 /* DaisyPig.png */; };
+		2667786E1FDE8FB600CE1A84 /* fu_ztt_520kouh.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778671FDE8FB600CE1A84 /* fu_ztt_520kouh.png */; };
+		266778781FDEA6DE00CE1A84 /* newMood.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266778771FDEA6DD00CE1A84 /* newMood.bundle */; };
+		2667787A1FDEA6E700CE1A84 /* newMood.png in Resources */ = {isa = PBXBuildFile; fileRef = 266778791FDEA6E700CE1A84 /* newMood.png */; };
+		26B7BC431FDE736A000A1057 /* fuFilter.json in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC371FDE736A000A1057 /* fuFilter.json */; };
+		26B7BC441FDE736A000A1057 /* BeagleDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC391FDE736A000A1057 /* BeagleDog.png */; };
+		26B7BC451FDE736A000A1057 /* ColorCrown.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC3A1FDE736A000A1057 /* ColorCrown.png */; };
+		26B7BC461FDE736A000A1057 /* Deer.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC3B1FDE736A000A1057 /* Deer.png */; };
+		26B7BC481FDE736A000A1057 /* HappyRabbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC3D1FDE736A000A1057 /* HappyRabbi.png */; };
+		26B7BC551FDE751D000A1057 /* BeagleDog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC4F1FDE751D000A1057 /* BeagleDog.bundle */; };
+		26B7BC561FDE751D000A1057 /* ColorCrown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC501FDE751D000A1057 /* ColorCrown.bundle */; };
+		26B7BC571FDE751D000A1057 /* Deer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC511FDE751D000A1057 /* Deer.bundle */; };
+		26B7BC591FDE751D000A1057 /* HappyRabbi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26B7BC531FDE751D000A1057 /* HappyRabbi.bundle */; };
 		F22DD9E11F42CAAE002832F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9C61F42CAAE002832F9 /* AppDelegate.m */; };
 		F22DD9E21F42CAAE002832F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9C71F42CAAE002832F9 /* Assets.xcassets */; };
 		F22DD9E31F42CAAE002832F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22DD9C81F42CAAE002832F9 /* LaunchScreen.storyboard */; };
@@ -22,13 +45,33 @@
 		F22DD9ED1F42CAAE002832F9 /* StickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9DC1F42CAAE002832F9 /* StickerCell.m */; };
 		F22DD9EE1F42CAAE002832F9 /* StickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9DE1F42CAAE002832F9 /* StickerView.m */; };
 		F22DD9EF1F42CAAE002832F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DD9E01F42CAAE002832F9 /* ViewController.m */; };
-		FFB34F8B77C7B0AC8C032ECB /* libPods-KMCFuFilterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51233A2C1F29DF629E6C0B4C /* libPods-KMCFuFilterDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B03E1D77B75D75E479DF6FD /* Pods-KMCFuFilterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo.release.xcconfig"; sourceTree = "<group>"; };
-		51233A2C1F29DF629E6C0B4C /* libPods-KMCFuFilterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCFuFilterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E457B0FDE07D1DE383D9E567 /* Pods-KMCFuFilterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCFuFilterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		266778531FDE8FA500CE1A84 /* DaisyPig.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = DaisyPig.bundle; sourceTree = "<group>"; };
+		266778541FDE8FA500CE1A84 /* tanghulu.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = tanghulu.bundle; sourceTree = "<group>"; };
+		266778551FDE8FA500CE1A84 /* fu_ztt_520kouh.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = fu_ztt_520kouh.bundle; sourceTree = "<group>"; };
+		266778571FDE8FA500CE1A84 /* tiger.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = tiger.bundle; sourceTree = "<group>"; };
+		266778581FDE8FA500CE1A84 /* chri3.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = chri3.bundle; sourceTree = "<group>"; };
+		266778591FDE8FA600CE1A84 /* fu_ztt_live520.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = fu_ztt_live520.bundle; sourceTree = "<group>"; };
+		266778611FDE8FB500CE1A84 /* tanghulu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanghulu.png; sourceTree = "<group>"; };
+		266778621FDE8FB500CE1A84 /* chri3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chri3.png; sourceTree = "<group>"; };
+		266778631FDE8FB500CE1A84 /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger.png; sourceTree = "<group>"; };
+		266778641FDE8FB500CE1A84 /* fu_ztt_live520.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fu_ztt_live520.png; sourceTree = "<group>"; };
+		266778661FDE8FB600CE1A84 /* DaisyPig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DaisyPig.png; sourceTree = "<group>"; };
+		266778671FDE8FB600CE1A84 /* fu_ztt_520kouh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fu_ztt_520kouh.png; sourceTree = "<group>"; };
+		266778771FDEA6DD00CE1A84 /* newMood.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = newMood.bundle; sourceTree = "<group>"; };
+		266778791FDEA6E700CE1A84 /* newMood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newMood.png; sourceTree = "<group>"; };
+		26B7BC351FDE7299000A1057 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		26B7BC371FDE736A000A1057 /* fuFilter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fuFilter.json; sourceTree = "<group>"; };
+		26B7BC391FDE736A000A1057 /* BeagleDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeagleDog.png; sourceTree = "<group>"; };
+		26B7BC3A1FDE736A000A1057 /* ColorCrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorCrown.png; sourceTree = "<group>"; };
+		26B7BC3B1FDE736A000A1057 /* Deer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deer.png; sourceTree = "<group>"; };
+		26B7BC3D1FDE736A000A1057 /* HappyRabbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HappyRabbi.png; sourceTree = "<group>"; };
+		26B7BC4F1FDE751D000A1057 /* BeagleDog.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = BeagleDog.bundle; sourceTree = "<group>"; };
+		26B7BC501FDE751D000A1057 /* ColorCrown.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = ColorCrown.bundle; sourceTree = "<group>"; };
+		26B7BC511FDE751D000A1057 /* Deer.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = Deer.bundle; sourceTree = "<group>"; };
+		26B7BC531FDE751D000A1057 /* HappyRabbi.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = HappyRabbi.bundle; sourceTree = "<group>"; };
 		F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCFuFilterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22DD9C51F42CAAE002832F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F22DD9C61F42CAAE002832F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,20 +103,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB34F8B77C7B0AC8C032ECB /* libPods-KMCFuFilterDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		032AF2280DFA6BF45D99AABB /* Pods */ = {
+		26B7BC361FDE736A000A1057 /* TestBundlePath */ = {
 			isa = PBXGroup;
 			children = (
-				E457B0FDE07D1DE383D9E567 /* Pods-KMCFuFilterDemo.debug.xcconfig */,
-				1B03E1D77B75D75E479DF6FD /* Pods-KMCFuFilterDemo.release.xcconfig */,
+				26B7BC4E1FDE751D000A1057 /* TestBundle */,
+				26B7BC371FDE736A000A1057 /* fuFilter.json */,
+				26B7BC381FDE736A000A1057 /* TestPng */,
 			);
-			name = Pods;
+			path = TestBundlePath;
+			sourceTree = "<group>";
+		};
+		26B7BC381FDE736A000A1057 /* TestPng */ = {
+			isa = PBXGroup;
+			children = (
+				266778791FDEA6E700CE1A84 /* newMood.png */,
+				266778621FDE8FB500CE1A84 /* chri3.png */,
+				266778661FDE8FB600CE1A84 /* DaisyPig.png */,
+				266778671FDE8FB600CE1A84 /* fu_ztt_520kouh.png */,
+				266778641FDE8FB500CE1A84 /* fu_ztt_live520.png */,
+				266778611FDE8FB500CE1A84 /* tanghulu.png */,
+				266778631FDE8FB500CE1A84 /* tiger.png */,
+				26B7BC391FDE736A000A1057 /* BeagleDog.png */,
+				26B7BC3A1FDE736A000A1057 /* ColorCrown.png */,
+				26B7BC3B1FDE736A000A1057 /* Deer.png */,
+				26B7BC3D1FDE736A000A1057 /* HappyRabbi.png */,
+			);
+			path = TestPng;
+			sourceTree = "<group>";
+		};
+		26B7BC4E1FDE751D000A1057 /* TestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				266778771FDEA6DD00CE1A84 /* newMood.bundle */,
+				266778581FDE8FA500CE1A84 /* chri3.bundle */,
+				266778531FDE8FA500CE1A84 /* DaisyPig.bundle */,
+				266778551FDE8FA500CE1A84 /* fu_ztt_520kouh.bundle */,
+				266778591FDE8FA600CE1A84 /* fu_ztt_live520.bundle */,
+				266778541FDE8FA500CE1A84 /* tanghulu.bundle */,
+				266778571FDE8FA500CE1A84 /* tiger.bundle */,
+				26B7BC4F1FDE751D000A1057 /* BeagleDog.bundle */,
+				26B7BC501FDE751D000A1057 /* ColorCrown.bundle */,
+				26B7BC511FDE751D000A1057 /* Deer.bundle */,
+				26B7BC531FDE751D000A1057 /* HappyRabbi.bundle */,
+			);
+			path = TestBundle;
 			sourceTree = "<group>";
 		};
 		F2128ECC1ED56FB300A6162F = {
@@ -81,8 +160,6 @@
 			children = (
 				F22DD9C41F42CAAE002832F9 /* KMCFilterDemo */,
 				F2128ED61ED56FB300A6162F /* Products */,
-				F2128F101ED5703000A6162F /* Frameworks */,
-				032AF2280DFA6BF45D99AABB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,14 +169,6 @@
 				F2128ED51ED56FB300A6162F /* KMCFuFilterDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F2128F101ED5703000A6162F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				51233A2C1F29DF629E6C0B4C /* libPods-KMCFuFilterDemo.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F22DD9C41F42CAAE002832F9 /* KMCFilterDemo */ = {
@@ -116,6 +185,7 @@
 				F22DD9DA1F42CAAE002832F9 /* view */,
 				F22DD9DF1F42CAAE002832F9 /* ViewController.h */,
 				F22DD9E01F42CAAE002832F9 /* ViewController.m */,
+				26B7BC361FDE736A000A1057 /* TestBundlePath */,
 			);
 			path = KMCFilterDemo;
 			sourceTree = "<group>";
@@ -123,6 +193,7 @@
 		F22DD9CC1F42CAAE002832F9 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				26B7BC351FDE7299000A1057 /* Config.h */,
 				F22DD9CD1F42CAAE002832F9 /* FilterManager.h */,
 				F22DD9CE1F42CAAE002832F9 /* FilterManager.m */,
 				F22DD9CF1F42CAAE002832F9 /* MBProgressHUD */,
@@ -163,12 +234,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2128EEC1ED56FB300A6162F /* Build configuration list for PBXNativeTarget "KMCFuFilterDemo" */;
 			buildPhases = (
-				09011FB51DAC7BA9B2E78B76 /* [CP] Check Pods Manifest.lock */,
 				F2128ED11ED56FB300A6162F /* Sources */,
 				F2128ED21ED56FB300A6162F /* Frameworks */,
 				F2128ED31ED56FB300A6162F /* Resources */,
-				B631B8FC6D34531C5ADD35BA /* [CP] Embed Pods Frameworks */,
-				CC3EE5D9AAEE4F8BDA6D2086 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,63 +286,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266778691FDE8FB600CE1A84 /* chri3.png in Resources */,
+				26B7BC461FDE736A000A1057 /* Deer.png in Resources */,
+				2667785A1FDE8FA600CE1A84 /* DaisyPig.bundle in Resources */,
+				2667787A1FDEA6E700CE1A84 /* newMood.png in Resources */,
+				2667786A1FDE8FB600CE1A84 /* tiger.png in Resources */,
+				26B7BC441FDE736A000A1057 /* BeagleDog.png in Resources */,
+				266778781FDEA6DE00CE1A84 /* newMood.bundle in Resources */,
+				26B7BC551FDE751D000A1057 /* BeagleDog.bundle in Resources */,
+				26B7BC451FDE736A000A1057 /* ColorCrown.png in Resources */,
+				266778681FDE8FB600CE1A84 /* tanghulu.png in Resources */,
+				2667785F1FDE8FA600CE1A84 /* chri3.bundle in Resources */,
+				26B7BC431FDE736A000A1057 /* fuFilter.json in Resources */,
 				F22DD9E41F42CAAE002832F9 /* Main.storyboard in Resources */,
+				2667785C1FDE8FA600CE1A84 /* fu_ztt_520kouh.bundle in Resources */,
+				2667786E1FDE8FB600CE1A84 /* fu_ztt_520kouh.png in Resources */,
 				F22DD9E21F42CAAE002832F9 /* Assets.xcassets in Resources */,
+				26B7BC571FDE751D000A1057 /* Deer.bundle in Resources */,
+				2667785B1FDE8FA600CE1A84 /* tanghulu.bundle in Resources */,
 				F22DD9E61F42CAAE002832F9 /* LICENSE in Resources */,
+				2667786B1FDE8FB600CE1A84 /* fu_ztt_live520.png in Resources */,
 				F22DD9EB1F42CAAE002832F9 /* Info.plist in Resources */,
+				2667785E1FDE8FA600CE1A84 /* tiger.bundle in Resources */,
+				266778601FDE8FA600CE1A84 /* fu_ztt_live520.bundle in Resources */,
+				26B7BC481FDE736A000A1057 /* HappyRabbi.png in Resources */,
+				2667786D1FDE8FB600CE1A84 /* DaisyPig.png in Resources */,
 				F22DD9E31F42CAAE002832F9 /* LaunchScreen.storyboard in Resources */,
+				26B7BC561FDE751D000A1057 /* ColorCrown.bundle in Resources */,
+				26B7BC591FDE751D000A1057 /* HappyRabbi.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		09011FB51DAC7BA9B2E78B76 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B631B8FC6D34531C5ADD35BA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC3EE5D9AAEE4F8BDA6D2086 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCFuFilterDemo/Pods-KMCFuFilterDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2128ED11ED56FB300A6162F /* Sources */ = {
@@ -410,7 +453,6 @@
 		};
 		F2128EED1ED56FB300A6162F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E457B0FDE07D1DE383D9E567 /* Pods-KMCFuFilterDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZGJ54Q7R45;
@@ -443,7 +485,6 @@
 		};
 		F2128EEE1ED56FB300A6162F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B03E1D77B75D75E479DF6FD /* Pods-KMCFuFilterDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZGJ54Q7R45;

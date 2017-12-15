@@ -13,7 +13,7 @@
 #import "FilterManager.h"
 #import "MBProgressHUD.h"
 #import "UIColor+Expanded.h"
-
+#import "Config.h"
 
 @interface StickerCell(){
     
@@ -84,7 +84,13 @@
     if(!_material){
         [self.filterView setImage:[UIImage imageNamed:@"禁用"]];
     }else{
-        [self.filterView sd_setImageWithURL:[NSURL URLWithString:_material.strThumbnailURL] placeholderImage:nil options:SDWebImageRefreshCached];
+        if (isCustomPath) {
+            self.filterView.image = [UIImage imageNamed:_material.strThumbnailURL];
+        }else
+        {
+            [self.filterView sd_setImageWithURL:[NSURL URLWithString:_material.strThumbnailURL] placeholderImage:nil options:SDWebImageRefreshCached];
+        }
+        
     }
     
     //设置下载图标
@@ -93,6 +99,9 @@
     }else{
         _downloadBtn.hidden = NO;
         
+    }
+    if (isCustomPath) {
+        _downloadBtn.hidden = YES;
     }
 }
 

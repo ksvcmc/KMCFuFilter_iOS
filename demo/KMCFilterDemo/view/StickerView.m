@@ -11,6 +11,7 @@
 #import "Masonry.h"
 #import "FilterManager.h"
 #import "UIColor+Expanded.h"
+#import "Config.h"
 
 #define KFilterCellHeight 74
 #define KFilterCellWidth 74
@@ -137,7 +138,18 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     StickerCell * cell = (StickerCell *)[collectionView cellForItemAtIndexPath:indexPath];
     
-    [cell downloadMaterial];
+    if (isCustomPath) {
+        NSString *path =[[NSBundle mainBundle] bundlePath];
+        [[FilterManager instance].kmcFitler setCustomloadBundlePath:path]; //先设置路径
+        [[FilterManager instance].kmcFitler setCustomBundlePathMode:BundlePathMode_Custom];
+        [[FilterManager instance].kmcFitler startShowingMaterial:cell.material];
+    }
+    else
+    {
+        [[FilterManager instance].kmcFitler setCustomBundlePathMode:BundlePathMode_Default];
+        [cell downloadMaterial];
+    }
+    
     
     if([self.delegate respondsToSelector:@selector(StickerChanged:)]){
         [self.delegate StickerChanged:cell.material];

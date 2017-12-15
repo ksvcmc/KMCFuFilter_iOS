@@ -7,6 +7,8 @@
 //
 
 #import "FilterManager.h"
+#import "Config.h"
+#import "MJExtension.h"
 
 @interface FilterManager ()
 
@@ -42,28 +44,55 @@
              Onsuccess:(void (^)(void))completeSuccess{
     [_kmcFitler authorizeWithTokeID:tokeID onSuccess:^{
         NSLog(@"鉴权成功,开始获取列表");
-        [_kmcFitler fetchMaterialsWithGroupID:@"SE_LIST"
-                                    OnSuccess:^(NSArray<KMCArMaterial *> *arrMaterials) {
-                                        NSLog(@"获取列表成功");
-                                        for (KMCArMaterial* material in arrMaterials) {
-                                            if(material.triggerAction == 0){
-                                                [_faceMaterialList addObject:material];
-                                            }else{
-                                                [_actionMaterialList addObject:material];
+        if (!isCustomPath)
+        {
+            [_kmcFitler fetchMaterialsWithGroupID:@"SE_LIST"
+                                        OnSuccess:^(NSArray<KMCArMaterial *> *arrMaterials) {
+                                            NSLog(@"获取列表成功");
+                                            for (KMCArMaterial* material in arrMaterials) {
+                                                if(material.triggerAction == 0){
+                                                    [_faceMaterialList addObject:material];
+                                                }else{
+                                                    [_actionMaterialList addObject:material];
+                                             }
+                                                [_allMaterialList addObject:material];
                                             }
-                                            [_allMaterialList addObject:material];
-                                        }
-                                        if(completeSuccess)
-                                            completeSuccess();
-                                    } onFailure:^(int iErrorCode , NSString *strMessage){
-                NSString * errorMessage = [[NSString alloc]initWithFormat:@"鉴权失败，错误码:%d,错误信息:%@",iErrorCode,strMessage];
-             
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误提示" message:errorMessage delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-                                        [alert show];
-                                        });
-
-                                    }];
+                                            if(completeSuccess)
+                                                completeSuccess();
+                                        } onFailure:^(int iErrorCode , NSString *strMessage){
+                                            NSString * errorMessage = [[NSString alloc]initWithFormat:@"鉴权失败，错误码:%d,错误信息:%@",iErrorCode,strMessage];
+                                            
+                                            dispatch_async(dispatch_get_main_queue(), ^{
+                                                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误提示" message:errorMessage delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+                                                [alert show];
+                                            });
+                                            
+                                        }];
+        }
+        else
+        {
+            NSBundle *mainBundle = [NSBundle mainBundle];
+            NSString *jsonString = [mainBundle pathForResource:@"fuFilter" ofType:@"json"];
+            NSData *json = [[NSData alloc] initWithContentsOfFile:jsonString];
+            NSError *error;
+            NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:json
+                                                                           options:kNilOptions
+                                                                             error:&error];
+            if(jsonDictionary && [jsonDictionary objectForKey:@"SE_LIST"]){
+                NSArray *arrMaterials = [KMCArMaterial mj_objectArrayWithKeyValuesArray:[jsonDictionary objectForKey:@"SE_LIST"]];
+                for (KMCArMaterial* material in arrMaterials) {
+                    if(material.triggerAction == 0){
+                        [_faceMaterialList addObject:material];
+                    }else{
+                        [_actionMaterialList addObject:material];
+                    }
+                    [_allMaterialList addObject:material];
+                }
+            }
+            if(completeSuccess)
+                completeSuccess();
+            
+        }
     } onFailure:^(AuthorizeError iErrorCode){
         NSString * errorMessage = [[NSString alloc]initWithFormat:@"鉴权失败，错误码:%lu",(unsigned long)iErrorCode];
         dispatch_async(dispatch_get_main_queue(), ^{

@@ -51,6 +51,20 @@ typedef enum : NSUInteger {
     AUTHORIZE_NETWORK_ERROR = 1009
 } AuthorizeError;
 
+
+typedef enum : NSUInteger {
+    /**
+     兼容之前版本,默认设置为下载之后的贴纸沙盒路径
+     */
+    BundlePathMode_Default=2000,
+    /**
+     自定义贴纸模式
+     */
+    BundlePathMode_Custom,
+    
+} BundlePathMode;
+
+
 @interface KMCFilter : NSObject
 
 /** 
@@ -125,6 +139,18 @@ typedef enum : NSUInteger {
  @return 检测到的人脸个数，返回 0 代表没有检测到人脸
  */
 - (int)KmcIsTracking;
+/**
+ 贴纸自定义路径：
+ @param bundlePath 贴纸路径 如 a/b/c.bundle 路径，bundlePath 请输入a/b/
+ */
+- (void)setCustomloadBundlePath:(NSString *)bundlePath;
+
+/**
+ 贴纸模式：
+ @param bundlePathMode 贴纸模式  使用 下载之后的路径 还是 本地路径 加载贴纸
+ */
+
+- (void)setCustomBundlePathMode:(BundlePathMode) bundlePathMode;
 
 /**
  可以用来设置的filter

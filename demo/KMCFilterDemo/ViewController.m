@@ -33,15 +33,14 @@
 #define WeakObj(o) autoreleasepool{} __weak typeof(o) weak##o = o;
 #define kGetAkURI       @"https://kmc.api.ksyun.com?APIAction=GetAuthInfo&Action=GetDemoAKSign&Version=2017-05-31"
 
+
+
 #ifdef FUFILTER
-#define buttonCount 1
+#define buttonCount 2
 #define TOKEID @"bd5f5bb6bbbd33360645a7eaee517ac0"
 #endif
 
-#ifdef STFILTER
-#define buttonCount 2
-#define TOKEID @"98e1692a90e3c404201391208e0346f2"
-#endif
+
 
 
 @interface ViewController ()<StickerViewDelegate,UIGestureRecognizerDelegate>
@@ -50,12 +49,10 @@
 @property (nonatomic, strong) UIButton* faceButton;
 @property (nonatomic, strong) StickerView * faceView;
 @property (nonatomic, readwrite) BOOL faceViewIsShowing;
-#ifdef STFILTER
 @property (nonatomic, strong) UIButton* actionButton;
 @property (nonatomic, strong) StickerView * actionView;
 @property (nonatomic, readwrite) BOOL actionViewIsShowing;
 
-#endif
 
 @end
 
@@ -98,7 +95,7 @@
     [_streamerKit startPreview:self.view];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_streamerKit.streamerBase startStream:[NSURL URLWithString:@"rtmp://120.92.224.235/live/456"]];
+        [_streamerKit.streamerBase startStream:[NSURL URLWithString:@"rtmp://test.uplive.ksyun.com/live/456"]];
     });
 }
 
@@ -148,8 +145,7 @@
         make.width.equalTo(algoView.mas_width).multipliedBy(1.0/buttonCount);
     }];
 
-//商汤有动作贴纸
-#ifdef STFILTER
+
     //动作view
     _actionView = [[StickerView alloc] initWithType:1];
     _actionView.delegate = self;
@@ -166,10 +162,9 @@
         make.leading.equalTo(_faceButton.mas_trailing);
         make.width.equalTo(algoView.mas_width).multipliedBy(1.0/buttonCount);
     }];
-#endif
 }
 
-#ifdef STFILTER
+
 
 -(void)actionBtnSelected:(UIButton* )sender{
     _faceButton.selected = NO;
@@ -186,7 +181,7 @@
     }
 
 }
-#endif
+
 
 -(void)switchCamera:(UIButton* )sender{
     if(_streamerKit)
@@ -203,14 +198,12 @@
             weakself.faceViewIsShowing = YES;
         }];
     }
-#ifdef STFILTER
     _actionButton.selected = NO;
     if(_actionViewIsShowing){
         @WeakObj(self);
         weakself.actionView.frame = kBeautyCFGViewHideFrame;
         weakself.actionViewIsShowing = NO;
     }
-#endif
 
 }
 
@@ -223,7 +216,7 @@
             weakself.faceViewIsShowing = NO;
         }];
     }
-#ifdef STFILTER
+
     if(_actionViewIsShowing){
         @WeakObj(self);
         [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -232,7 +225,7 @@
             weakself.actionViewIsShowing = NO;
         }];
     }
-#endif
+
 
   
     

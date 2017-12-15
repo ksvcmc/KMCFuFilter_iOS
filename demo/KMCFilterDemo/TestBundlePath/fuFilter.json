@@ -1,0 +1,92 @@
+{
+    "SE_LIST": [
+                {
+                "strID": "0",
+                "strThumbnailURL": "BeagleDog.png",
+                "strName": "BeagleDog.bundle",
+                "strInstructions": "一直可爱的小狗",
+                "triggerAction": "0"
+                },
+                {
+                "strID": "1",
+                "strThumbnailURL": "ColorCrown.png",
+                "strName": "ColorCrown.bundle",
+                "strInstructions": "皇冠"
+                },
+                {
+                "strID": "2",
+                "strThumbnailURL": "Deer.png",
+                "strName": "Deer.bundle",
+                "strInstructions": "长颈鹿"
+                },
+                {
+                "strID": "3",
+                "strThumbnailURL": "HappyRabbi.png",
+                "strName": "HappyRabbi.bundle",
+                "strInstructions": "快乐的兔子"
+                },
+                {
+                "strID": "13",
+                "strThumbnailURL": "fu_ztt_520kouh.png",
+                "strMeterialURL": "",
+                "strName": "fu_ztt_520kouh.bundle",
+                "strInstructions": "嘟嘟嘴",
+                "triggerAction": "1",
+                "strTriggerActionTip": "请嘟嘟嘴！"
+                },
+                {
+                "strID": "14",
+                "strThumbnailURL": "tanghulu.png",
+                "strMeterialURL": "",
+                "strName": "tanghulu.bundle",
+                "strInstructions": "张嘴",
+                "triggerAction": "1",
+                "strTriggerActionTip": "请张嘴！"
+                },
+                {
+                "strID": "15",
+                "strThumbnailURL": "newMood.png",
+                "strMeterialURL": "",
+                "strName": "newMood.bundle",
+                "strInstructions": "微笑/生气",
+                "triggerAction": "1",
+                "strTriggerActionTip": "请皱眉或者嘴角向下等！"
+                },
+                {
+                "strID": "16",
+                "strThumbnailURL": "fu_ztt_live520.png",
+                "strMeterialURL": "",
+                "strName": "fu_ztt_live520.bundle",
+                "strInstructions": "手势道具",
+                "triggerAction": "1",
+                "strTriggerActionTip": "请做比心的手势！"
+                },
+                {
+                "strID": "18",
+                "strThumbnailURL": "DaisyPig.png",
+                "strMeterialURL": "",
+                "strName": "DaisyPig.bundle",
+                "strInstructions": "变形道具",
+                "triggerAction": "1",
+                "strTriggerActionTip": "变形道具"
+                },
+                {
+                "strID": "19",
+                "strThumbnailURL": "tiger.png",
+                "strMeterialURL": "",
+                "strName": "tiger.bundle",
+                "strInstructions": "老虎",
+                "triggerAction": "0",
+                "strTriggerActionTip": ""
+                },
+                {
+                "strID": "20",
+                "strThumbnailURL": "chri3.png",
+                "strMeterialURL": "",
+                "strName": "chri3.bundle",
+                "strInstructions": "圣诞节道具",
+                "triggerAction": "0",
+                "strTriggerActionTip": ""
+                }
+                ]
+}
