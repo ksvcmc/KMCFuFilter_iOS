@@ -1,4 +1,11 @@
 # 金山云魔方贴纸、美颜美型API文档
+
+[![Apps Using](https://img.shields.io/cocoapods/at/KMCFuFilter.svg?label=Apps%20Using%20KMCFuFilter&colorB=28B9FE)](http://cocoapods.org/pods/KMCFuFilter)[![Downloads](https://img.shields.io/cocoapods/dt/KMCFuFilter.svg?label=Total%20Downloads%20KMCFuFilter&colorB=28B9FE)](http://cocoapods.org/pods/KMCFuFilter)
+
+[![Latest release](https://img.shields.io/github/release/ksvcmc/KMCFuFilter_iOS.svg)](https://github.com/ksvcmc/KMCFuFilter_iOS/releases/latest)
+[![CocoaPods platform](https://img.shields.io/cocoapods/p/KMCFuFilter.svg)](https://cocoapods.org/pods/KMCFuFilter)
+[![CocoaPods version](https://img.shields.io/cocoapods/v/KMCFuFilter.svg?label=pod_github)](https://cocoapods.org/pods/KMCFuFilter)
+
 ## 项目背景
 金山魔方是一个多媒体能力提供平台，通过统一接入API、统一鉴权、统一计费等多种手段，降低客户接入多媒体处理能力的代价，提供多媒体能力供应商的效率。 本文档主要针对统一FILTER功能而说明。
 ## 效果展示
