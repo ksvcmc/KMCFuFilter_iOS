@@ -45,9 +45,6 @@ token与应用包名为一一对应的关系;
                      onSuccess:(void (^)(void))completeSuccess
                      onFailure:(void (^)(int iErrorCode))completeFailure;
 ```
-
-+ **上传贴纸**（不在本sdk范围内,请参考控制台文档）
- 客户根据自己选择的厂家，按照厂家要求，自己设计好贴纸，通过金山控制台上传贴纸。
 + **拉取贴纸索引信息**
  客户可以在控制台把贴纸放入一个group里面，sdk通过groupID进行拉取，相关函数为：
 ```
